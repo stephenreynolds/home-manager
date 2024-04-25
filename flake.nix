@@ -34,8 +34,6 @@
       mkPkgs = pkgs: system: extraOverlays:
         import pkgs {
           inherit system;
-          config.allowUnfree = true;
-          overlays = extraOverlays ++ (builtins.attrValues self.overlays);
         };
       pkgsFor = lib.genAttrs systems (sys: mkPkgs nixpkgs sys [ self.overlays.default ]);
 
