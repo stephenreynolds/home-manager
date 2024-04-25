@@ -1,7 +1,9 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, ... }:
+{
   my = {
     cli = {
       bat.enable = true;
+      btop.enable = true;
       extraPackages = with pkgs; [
         ripgrep
         sad
