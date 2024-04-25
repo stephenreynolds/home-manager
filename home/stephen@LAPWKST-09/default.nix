@@ -5,14 +5,15 @@
       bat.enable = true;
       btop.enable = true;
       extraPackages = with pkgs; [
-        ripgrep
-        sad
+        ansible
         fd
         jq
-        wget
+        ripgrep
+        sad
+        trash-cli
         tree
         unzip
-        trash-cli
+        wget
         my.t
         my.tt
       ];
