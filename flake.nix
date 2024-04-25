@@ -69,6 +69,14 @@
 
       formatter = forEachSystem (pkgs: pkgs.nixfmt-rfc-style);
 
+      templates = lib.pipe ./templates [
+        builtins.readDir
+        (builtins.mapAttrs (name: _: {
+          description = name;
+          path = ./templates/${name};
+        }))
+      ];
+
       devShells = forEachSystem (pkgs: { default = import ./shell.nix { inherit pkgs; }; });
     };
 }
