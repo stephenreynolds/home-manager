@@ -72,6 +72,7 @@ in
         ci = "commit";
         st = "status";
         br = "branch";
+        sw = "switch";
         type = "cat-file -t";
         dump = "cat-file -p";
         undo = "reset HEAD~";
