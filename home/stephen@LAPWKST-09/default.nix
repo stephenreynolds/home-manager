@@ -47,7 +47,6 @@
       zoxide.enable = true;
     };
     services = {
-      autotrash.enable = true;
       keyring.enable = true;
     };
     wsl.enable = true;
