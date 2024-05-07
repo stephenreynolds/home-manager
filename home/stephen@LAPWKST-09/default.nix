@@ -9,6 +9,7 @@
         fd
         jq
         ripgrep
+        rustup
         sad
         trash-cli
         tree
