@@ -1,7 +1,7 @@
 { config, lib, ... }:
 
 let
-  inherit (lib) mkEnableOption mkOption mkIf types;
+  inherit (lib) mkEnableOption mkOption mkIf types optionalString;
   cfg = config.my.cli.gh;
 in
 {
@@ -20,6 +20,7 @@ in
     programs.gh = {
       enable = true;
       settings = {
+        editor = optionalString config.programs.neovim.enable "nvim";
         git_protocol = "ssh";
       };
     };
