@@ -32,6 +32,7 @@ in
         nbn = "nix build nixpkgs#";
         nf = "nix flake";
         nfu = "nix flake update";
+        nflu = "nix flake lock --update-input";
         nfc = "nix flake check";
         nfi = "nix flake init";
 

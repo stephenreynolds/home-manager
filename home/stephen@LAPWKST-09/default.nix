@@ -8,6 +8,7 @@
         ansible
         fd
         jq
+        just
         ripgrep
         rustup
         sad
