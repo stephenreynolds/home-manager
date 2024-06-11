@@ -14,5 +14,9 @@ in
       enable = true;
       components = [ "pkcs11" "secrets" "ssh" ];
     };
+
+    services.ssh-agent = {
+      enable = true;
+    };
   };
 }
