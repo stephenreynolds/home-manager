@@ -10,7 +10,8 @@
         jq
         just
         ripgrep
-        rustup
+        cargo
+        gcc
         sad
         trash-cli
         tree
