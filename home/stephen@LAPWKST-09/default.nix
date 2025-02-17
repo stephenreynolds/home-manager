@@ -2,6 +2,7 @@
 {
   my = {
     cli = {
+      aider.enable = true;
       bat.enable = true;
       btop.enable = true;
       extraPackages = with pkgs; [

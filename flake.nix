@@ -20,7 +20,6 @@
 
     nvim-config = {
       url = "github:stephenreynolds/nvim";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
